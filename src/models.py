@@ -44,7 +44,7 @@ class Comment(Base):
 class Media(Base):
     __tablename__ = 'media'
     id = Column(Integer, primary_key=True)
-    type = Column(String(100), nullable=False) 
+    type = Column(Enum('image', 'video', 'audio', name='media_types'), nullable=False) 
     url = Column(String(100), nullable=False)
 
     post_id = Column(Integer, ForeignKey('post.id'), nullable=True)
