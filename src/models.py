@@ -1,6 +1,6 @@
 import os
 import sys
-from sqlalchemy import create_engine, Column, ForeignKey, Integer, String # type: ignore
+from sqlalchemy import create_engine, Column, ForeignKey, Integer, String,Enum # type: ignore
 from sqlalchemy.orm import relationship, declarative_base # type: ignore
 from sqlalchemy import create_engine # type: ignore
 from eralchemy2 import render_er # type: ignore
